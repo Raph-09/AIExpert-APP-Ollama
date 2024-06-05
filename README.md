@@ -3,21 +3,21 @@
 The AI Alpha model was created from moondream llm.
 
 
-Requirements
+# Requirements
 Ollama: You need to have Ollama set up and running locally on your machine. This involves downloading and installing Ollama, and potentially running a specific model like "moondream". Refer to Ollama's documentation for installation instructions https://huggingface.co/codellama.
 Python Libraries: This application uses the streamlit and langchain libraries. You can install them using pip install streamlit langchain.
 Functionality
 This application allows you to interact with the "aiAlpha" model running on your local Ollama instance. You can enter a prompt or question in the text box and click the "Generate" button. If a prompt is provided, the application will send it to the Ollama model and display the generated response.
 
-Code Breakdown
-Imports:
+# Code Breakdown
+##Imports:
 streamlit as st: Imports the Streamlit library for creating the web application interface.
 from langchain.llms import Ollama: Imports the Ollama class from the langchain library to interact with the LLM.
 generate_text function:
 This function takes a prompt (text) as input.
 It creates an Ollama object specifying the local Ollama base URL (http://localhost:11434) and the desired model ("aiAlpha").
 It then calls the invoke method of the Ollama object with the provided prompt and returns the generated response.
-Streamlit App:
+## Streamlit App:
 The application sets a title ("Ollama AI Expert") and a subheader ("Using the AI Alpha Model").
 It creates a text input box for users to enter their prompt.
 A button labeled "Generate" is displayed.
